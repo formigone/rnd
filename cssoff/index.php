@@ -75,7 +75,7 @@
         <div class="col-sm-12">
             <div class="row">
                 <div class="col-md-12 co-banner-robot">
-                    <form class="col-md-5 col-md-offset-7 co-promo-form">
+                    <form class="col-md-5 col-md-offset-7 col-sm-7 col-sm-offset-5 co-promo-form">
                         <h4 class="co-promo-form-title">Sign up</h4>
 
                         <div>
@@ -99,7 +99,7 @@
             <hr class="co-hr-black"/>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 invisible-xs invisible-sm">
                     <p>Tupacsum Ipsum Momma can't help her, but it hurts to hear her calling. Heeey! I see the
                         penitentiary, one day. You know it makes me unhappy (what's that). No money no babysitter, she
                         couldn't keep a job. Ya just workin with the scraps you was given.</p>
@@ -112,7 +112,7 @@
                         seems it'll never let up, but.</p>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12">
                     <p>Tupacsum Ipsum Momma can't help her, but it hurts to hear her calling. But no one seems to notice
                         any change in her figure. And if you fall, stand tall and comeback for more.</p>
 
@@ -125,36 +125,43 @@
                         this cell, ain't livin well.</p>
                 </div>
 
-                <div class="col-md-4">
+                <div class="clearfix"></div>
+
+                <div class="col-md-4 col-sm-6">
                     <div class="well co-bg-gray co-panel">
                         <img src="../img/cssoff/story1img.png" class="img-responsive"/>
 
-                        <p><b>Can't go to her family</b></p>
+                        <p class="co-panel-title"><b>Can't go to her family</b></p>
 
                         <p>make it to tha bright screen. He left her and she had the baby solo, she had it on the
                             bathroom floor.</p>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <div class="well co-bg-gray co-panel">
                         <img src="../img/cssoff/story2img.png" class="img-responsive"/>
 
-                        <p><b>Can't go to her family</b></p>
+                        <p class="co-panel-title"><b>Can't go to her family</b></p>
 
                         <p>make it to tha bright screen. He left her and she had the baby solo, she had it on the
                             bathroom floor.</p>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-11">
                     <div class="well co-bg-gray co-panel">
-                        <img src="../img/cssoff/story3img.png" class="img-responsive"/>
+                        <div class="co-special-case-panel">
+                            <img src="../img/cssoff/story3img.png" class="img-responsive"/>
+                        </div>
 
-                        <p><b>Can't go to her family</b></p>
+                        <div class="co-special-case-panel co-special-case-panel-middle">
+                            <p class="co-panel-title"><b>Can't go to her family</b></p>
 
-                        <p>make it to tha bright screen. He left her and she had the baby solo, she had it on the
-                            bathroom floor.</p>
+                            <p>make it to tha bright screen. He left her and she had the baby solo, she had it on the
+                                bathroom floor.</p>
+                        </div>
+                        <div class="clearfix"></div>
                     </div>
                 </div>
             </div>

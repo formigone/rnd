@@ -4,11 +4,11 @@
     <list default="true" id="28ac7b57-3d30-4e78-8b33-dce3735188dc" name="Default" comment="" />
     <ignored path="rnd.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.php" changelist="28ac7b57-3d30-4e78-8b33-dce3735188dc" time="1395431557911" ignored="false" />
+    <file path="/index.php" changelist="28ac7b57-3d30-4e78-8b33-dce3735188dc" time="1395434597575" ignored="false" />
     <file path="/gs.css" changelist="28ac7b57-3d30-4e78-8b33-dce3735188dc" time="1394576577693" ignored="false" />
     <file path="/theme.css" changelist="28ac7b57-3d30-4e78-8b33-dce3735188dc" time="1394574903443" ignored="false" />
     <file path="/page2.php" changelist="28ac7b57-3d30-4e78-8b33-dce3735188dc" time="1394750090444" ignored="false" />
-    <file path="/cssoff-style.css" changelist="28ac7b57-3d30-4e78-8b33-dce3735188dc" time="1395431655479" ignored="false" />
+    <file path="/cssoff-style.css" changelist="28ac7b57-3d30-4e78-8b33-dce3735188dc" time="1395434669192" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +31,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cssoff/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="42" selection-start="4316" selection-end="4316" vertical-scroll-proportion="-26.25">
+            <state line="77" column="66" selection-start="3838" selection-end="3838" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -40,7 +40,7 @@
       <file leaf-file-name="cssoff-style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/cssoff-style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="25" selection-start="2004" selection-end="2004" vertical-scroll-proportion="0.061166428">
+            <state line="116" column="1" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.70412517">
               <folding />
             </state>
           </provider>
@@ -346,14 +346,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cssoff/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="42" selection-start="4316" selection-end="4316" vertical-scroll-proportion="-26.25">
+        <state line="77" column="66" selection-start="3838" selection-end="3838" vertical-scroll-proportion="-3.75">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/cssoff-style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="25" selection-start="2004" selection-end="2004" vertical-scroll-proportion="0.061166428">
+        <state line="116" column="1" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.70412517">
           <folding />
         </state>
       </provider>
