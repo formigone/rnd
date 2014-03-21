@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    display: block;
+    overflow: auto;
+}
+
+.col-d-1, .col-d-2, .col-d-3, .col-d-4, .col-d-5, .col-d-6, .col-d-7, .col-d-8, .col-d-9, .col-d-10, .col-d-11, .col-d-12 {
+    display: block;
+    float: left;
+    padding: 10px;
+}
+
+.col-d-1 {
+    width: 8.33%;
+}
+
+.col-d-2 {
+    width: 16.66%;
+}
+
+.col-d-3 {
+    width: 24.99%;
+}
+
+.col-d-4 {
+    width: 33.32%;
+}
+
+.col-d-5 {
+    width: 41.65%;
+}
+
+.col-d-6 {
+    width: 49.99%;
+}
+
+.col-d-7 {
+    width: 58%;
+}
+
+.col-d-8 {
+    width: 67%;
+}
+
+.col-d-9 {
+    width: 75%;
+}
+
+.col-d-10 {
+    width: 83%;
+}
+
+.col-d-11 {
+    width: 92%;
+}
+
+.col-d-12 {
+    width: 100%;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 800px) {
+    .container {
+        width: 500px;
+    }
+}
+
+@media (min-width: 960px) {
+    .container {
+        width: 960px;
+    }
+}
+
+.panel {
+    padding: 10% 5% 12%;
+    min-height: 250px;
+}
+
+.panel-dark {
+    background: #000;
+    color: #fff;
+}
+
+.panel-light {
+    background: #fff;
+    color: #333;
+}
+
+.panel-accent {
+    background: #060;
+}
