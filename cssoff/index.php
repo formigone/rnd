@@ -31,7 +31,11 @@
 <nav class="navbar navbar-default co-bg-green" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="co-icon co-icon-collapse pull-right visible-xs" data-toggle="collapse"
+
+            <a href="#" class="pull-right visible-xs" style="position: absolute; top: 14px; right: 58px;">
+                <span class="co-icon co-icon-search"></span>
+            </a>
+            <button type="button" class="co-icon co-icon-collapse pull-right visible-xs co-toggle" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
             </button>
@@ -75,6 +79,7 @@
         <div class="col-sm-12">
             <div class="row">
                 <div class="col-md-12 co-banner-robot">
+                    <img src="../img/cssoff/hdrimg.png" class="img-responsive visible-xs co-special-case-banner">
                     <form class="col-md-5 col-md-offset-7 col-sm-7 col-sm-offset-5 co-promo-form">
                         <h4 class="co-promo-form-title">Sign up</h4>
 
@@ -169,5 +174,11 @@
     </div>
 </div>
 
+<script>
+    document.querySelector(".co-toggle").addEventListener('click', function(e){
+        var el = document.querySelector("#bs-example-navbar-collapse-1");
+        el.style.display = el.style.display == "block" ? "none" : "block";
+    });
+</script>
 </body>
 </html>

@@ -4,11 +4,11 @@
     <list default="true" id="28ac7b57-3d30-4e78-8b33-dce3735188dc" name="Default" comment="" />
     <ignored path="rnd.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.php" changelist="28ac7b57-3d30-4e78-8b33-dce3735188dc" time="1395434597575" ignored="false" />
+    <file path="/index.php" changelist="28ac7b57-3d30-4e78-8b33-dce3735188dc" time="1395436615006" ignored="false" />
     <file path="/gs.css" changelist="28ac7b57-3d30-4e78-8b33-dce3735188dc" time="1394576577693" ignored="false" />
     <file path="/theme.css" changelist="28ac7b57-3d30-4e78-8b33-dce3735188dc" time="1394574903443" ignored="false" />
     <file path="/page2.php" changelist="28ac7b57-3d30-4e78-8b33-dce3735188dc" time="1394750090444" ignored="false" />
-    <file path="/cssoff-style.css" changelist="28ac7b57-3d30-4e78-8b33-dce3735188dc" time="1395434669192" ignored="false" />
+    <file path="/cssoff-style.css" changelist="28ac7b57-3d30-4e78-8b33-dce3735188dc" time="1395436299020" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,19 +28,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cssoff/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="66" selection-start="3838" selection-end="3838" vertical-scroll-proportion="-3.75">
+            <state line="34" column="81" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.02209131">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cssoff-style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="cssoff-style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/cssoff-style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="1" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.70412517">
+            <state line="262" column="33" selection-start="4144" selection-end="4173" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,15 +63,14 @@
         <option value="$PROJECT_DIR$/instant/page2.php" />
         <option value="$PROJECT_DIR$/instant/index.php" />
         <option value="$PROJECT_DIR$/css-off/index.php" />
-        <option value="$PROJECT_DIR$/cssoff/index.php" />
         <option value="$PROJECT_DIR$/css/cssoff-style.css" />
+        <option value="$PROJECT_DIR$/cssoff/index.php" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
     <option name="y" value="24" />
-    <option name="width" value="1602" />
+    <option name="width" value="1600" />
     <option name="height" value="852" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -100,7 +99,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -129,11 +127,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cssoff" />
+              <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -147,7 +141,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cssoff" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -161,12 +155,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="instant" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -174,8 +169,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="/usr/local/google-closure/gjslint.config" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -216,14 +211,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1602" height="852" extended-state="7" />
+    <frame x="0" y="24" width="1600" height="852" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.245" sideWeight="0.5006859" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.245" sideWeight="0.49931413" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24468085" sideWeight="0.5006859" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24468085" sideWeight="0.49931413" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -299,6 +294,13 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cssoff/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="81" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gs/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -334,26 +336,28 @@
         <state line="9" column="6" selection-start="0" selection-end="275" vertical-scroll-proportion="0.1988218" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/instant/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="9" selection-start="609" selection-end="736" vertical-scroll-proportion="0.6848306" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/instant/page2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="25" selection-start="476" selection-end="476" vertical-scroll-proportion="0.46391752" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cssoff/index.php">
+    <entry file="file://$PROJECT_DIR$/css/cssoff-style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="66" selection-start="3838" selection-end="3838" vertical-scroll-proportion="-3.75">
+        <state line="262" column="33" selection-start="4144" selection-end="4173" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/cssoff-style.css">
+    <entry file="file://$PROJECT_DIR$/instant/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="1" selection-start="1807" selection-end="1807" vertical-scroll-proportion="0.70412517">
+        <state line="30" column="20" selection-start="726" selection-end="726" vertical-scroll-proportion="0.66273934">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cssoff/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="81" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.02209131">
           <folding />
         </state>
       </provider>

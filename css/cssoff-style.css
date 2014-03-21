@@ -193,6 +193,14 @@ body {
     color: #004444;
 }
 
+.co-special-case-banner {
+    display: none;
+}
+
+.co-toggle {
+    margin: 10px 40px 0 0 !important;
+}
+
 @media (min-width:768px) and (max-width: 992px) {
     .co-special-case-panel {
         float: left;
@@ -210,8 +218,55 @@ body {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .col-sm-11 {
         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .co-hor-pad {
+        padding: 0;
+        margin-top: -70px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .co-banner-robot {
+        height: auto;
+        padding: 0;
+        background: transparent;
+    }
+
+    .co-special-case-banner {
+        display: block;
+        margin: 50px 0 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .co-promo-form {
+        margin-top: 0;
+        background: rgba(0, 0, 0, 0.75);
+    }
+    
+    .img-responsive {
+        width: 100% !important;
+    }
+
+    .navbar-brand {
+        margin-left: 10px;
+    }
+
+    #bs-example-navbar-collapse-1 {
+        position: absolute;
+        z-index: 99999;
+        background: #10A98D;
+        padding: 0 20px;
+        right: 20px;
+        top: 45px;
+        border: 0;
     }
 }
