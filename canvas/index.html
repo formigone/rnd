@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<body>
+
+<script>
+
+var canvas = document.createElement('canvas');
+var ctx = canvas.getContext('2d');
+
+document.body.appendChild(canvas);
+var p = document.createElement('pre');
+document.body.appendChild(p);
+
+var hero = {
+   x: 0,
+   y: 50,
+   w: 25,
+   h: 25
+};
+
+var keys = {};
+
+document.body.addEventListener('keydown', function(e){
+   keys[e.keyCode] = true;
+});
+
+document.body.addEventListener('keyup', function(e){
+   keys[e.keyCode] = false;
+});
+
+function render(delta){
+   ctx.clearRect(0, 0, canvas.width, canvas.height);
+   ctx.fillRect(hero.x, hero.y, hero.w, hero.h);
+}
+
+function tick(delta){
+   hero.y += Math.sin(Date.now() / 200) * 2.5;
+   if (keys[39]) {
+      hero.x += 1;
+   } else {
+      hero.x -= 2;
+      if (hero.x < 0) {
+         hero.x = 0;
+      }
+   }
+}
+
+function loop(){
+   tick();
+   render();
+
+   p.textContent = JSON.stringify(hero);
+   requestAnimationFrame(loop);
+}
+
+loop();
+
+</script>
+</body>
+</html>

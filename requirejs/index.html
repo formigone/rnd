@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Requirejs with Backbone example</title>
+    <script>
+        var require = {
+            "paths": {
+                "Comp": "../lib/comp/main",
+                "React": "../bower_components/react/react",
+                "Jsx": "../bower_components/react/JSXTransformer"
+            },
+            "waitSeconds": 0,
+            "urlArgs": "bust="+Date.now()
+        };
+    </script>
+    <script data-main="js/main" src="bower_components/requirejs/require.js"></script>
+</head>
+<body>
+</body>
+</html>

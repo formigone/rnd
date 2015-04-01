@@ -1,0 +1,77 @@
+<style>
+    #log {
+        padding: 10px;
+        margin: 10px;
+        background: #333;
+        font-family: monospace;
+        color: #0c0;
+    }
+</style>
+<div id="log"></div>
+<script>
+    var _container = document.querySelector('#log');
+    var log = function(container, msg) {
+        var d = new Date();
+        var el = document.createElement('p');
+        el.textContent = d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds() + ' ' + msg;
+        container.appendChild(el);
+    };
+
+    var delay = function(ms) {
+        return new Promise(function(resolve) {
+            setTimeout(resolve, ms);
+        });
+    };
+
+    var todo = ['Eat', 'Pray', 'Eat some more'];
+
+    /**
+     * Schedule each promise in one tick
+     */
+    var doAtOnce = function(){
+        todo.forEach(function(msg){
+            delay(1000).then(function() { log(_container, msg); });
+        });
+    };
+
+    /**
+     * Schedule each promise when the previous return -- but non-blocking
+     */
+    var doAsync = function(genFc){
+        console.log('in doAsync');
+        var gen = genFc();
+        console.log('in doAsync: invoked genFc');
+
+        var step = function(i){
+            console.log('in doAsync: step(' + i + ')pre-next');
+            var ret = gen.next(log);
+            console.log('in doAsync: step(' + i + ')post-next');
+
+            if (!ret.done) {
+                ret.value.then(function(){
+                    step(++i);
+                });
+            }
+        };
+
+        step(0);
+    };
+
+//    doAtOnce();
+    doAsync(function* (){
+        console.log('in doAsync gen');
+        // yield won't work inside nested function because
+        // it'll be scoped to inner function -- where it's not defined
+//        todo.forEach(function(msg){
+//            var _log = yield delay(1000);
+//            _log(_container, msg);
+//        });
+
+        for (var i = 0; i < todo.length; i++){
+            console.log('in doAsync gen loop(' + i + ')');
+            var _log = yield delay(1000);
+            _log(_container, todo[i]);
+        }
+
+    });
+</script>

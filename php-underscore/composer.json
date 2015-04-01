@@ -1,0 +1,12 @@
+{
+    "name": "root/php-underscore",
+    "require": {
+        "underscore/underscore.php": "~1.3"
+    },
+    "authors": [
+        {
+            "name": "Rodrigo Silveira",
+            "email": "rsilveira@deseretdigital.com"
+        }
+    ]
+}

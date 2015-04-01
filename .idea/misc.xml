@@ -62,30 +62,6 @@
     <option white="false" />
     <option maxerr="50" />
   </component>
-  <component name="JSLintConfiguration" json="true">
-    <option indent="3" />
-    <option maxerr="50" />
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>HTML</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>HtmlUnknownTag</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
   <component name="ProjectRootManager" version="2" />
 </project>
 

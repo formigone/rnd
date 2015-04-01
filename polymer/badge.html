@@ -1,0 +1,47 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<polymer-element name="ksl-badge" attributes="name thumbnail url" constructor="KslBadge">
+    <template>
+        <style>
+            .container {
+                display: block;
+                width: 100%;
+                background: #eee;
+                padding: 10px 0 0;
+            }
+
+            .container img {
+                display: block;
+                margin: 20px auto;
+            }
+
+            .container h4 {
+                display: block;
+                padding: 10px;
+                text-align: center;
+                background: #ddd;
+            }
+        </style>
+        <div class="container">
+            <a href="{{url}}">
+                <img src="{{thumbnail}}" alt="{{name}}">
+            </a>
+            <h4>{{name}}</h4>
+        </div>
+    </template>
+
+    <script>
+        Polymer('ksl-badge', {
+            name: '',
+            thumbnail: '',
+            url: '/',
+            setThumbnail: function(img) {
+                if (img instanceof HTMLImageElement) {
+                    this.thumbnail = img.src;
+                } else {
+                    this.thumbnail = img;
+                }
+            }
+        });
+    </script>
+</polymer-element>

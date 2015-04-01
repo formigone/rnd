@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head></head>
+<body>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/backbone/backbone.js"></script>
+
+<h1>HIVE.pub</h1>
+<div id="q"></div>
+<hr/>
+<ul id="itemCollection"></ul>
+
+<script>
+    var Search = Backbone.Model.extend({
+        defaults: {
+            q: ''
+        },
+        initialize: function initialize() {
+            this.on('change:q', function onChangeQ() {
+                Backbone.Events.trigger('newItem', new Item({name: this.get('q')}));
+            });
+        }
+    });
+
+    var SearchView = Backbone.View.extend({
+        tagName: 'input',
+        events: {
+            'keypress': 'onKeyDown'
+        },
+        initialize: function initialize() {
+            this.$el = $('#q');
+            $(this.el).attr('autofocus', 1);
+            this.render();
+        },
+        render: function render() {
+            this.$el.html(this.el);
+            return this;
+        },
+        onKeyDown: function onKeyDown(event) {
+            if (event.keyCode === 13) {
+                this.model.set('q', this.el.value);
+                this.el.select();
+            }
+        }
+    });
+
+    var Item = Backbone.Model.extend({
+        defaults: {
+            name: ''
+        }
+    });
+
+    var ItemView = Backbone.View.extend({
+        tagName: 'li',
+        render: function render() {
+            this.$el.text(this.model.get('name'));
+            return this;
+        }
+    });
+
+    var ItemCollection = Backbone.Collection.extend({
+        model: ItemView
+    });
+
+    var ItemCollectionView = Backbone.View.extend({
+        render: function renderItemCollection(){
+            this.model.models.forEach(function(item){
+                this.$el.append(item.render().el);
+            }, this);
+        }
+    });
+
+    var q = new SearchView({
+        model: new Search()
+    });
+
+    var item = new ItemCollectionView({el: '#itemCollection', model: new ItemCollection()});
+    item.listenTo(Backbone.Events, 'newItem', function onNewItem(item) {
+        this.model.add(new ItemView({model: item}));
+        this.render();
+    });
+</script>
+</body>
+</html>
+

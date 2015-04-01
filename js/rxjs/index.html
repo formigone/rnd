@@ -1,0 +1,61 @@
+<p>Observable</p>
+<input type="text" id="Oin">
+<p id="Oout"></p>
+<hr/>
+
+<p>Normal</p>
+<input type="text" id="Nin">
+<p id="Nout"></p>
+
+<script src="/js/RxJS/rx.lite.js"></script>
+<script>
+    var someAsync = function(txt, delay){
+        delay = delay || 100;
+        return new Promise(function(resolve, reject){
+            setTimeout(function(){
+                resolve(txt);
+            }, delay);
+        });
+    };
+
+    var doObservable = function(){
+        var input = document.querySelector('#Oin');
+        var p = document.querySelector('#Oout');
+
+//        var src = Rx.Observable.fromEvent(input, 'keyup')
+//                .map(function(e) {
+//                    return e;
+//                });
+//        src.subscribe(function(e) {
+//            p.textContent = '...';
+//            someAsync(e.target.value).then(function(data){
+//                p.textContent = data;
+//            });
+//        });
+
+        var src = Rx.Observable.fromEvent(input, 'keyup')
+                .map(function(e){
+                    return someAsync(e.target.value);
+                })
+                .subscribe(function(promise) {
+                    promise.then(function(val){
+                        p.textContent = val;
+                    });
+                });
+    };
+
+    var doNormal = function(){
+        var input = document.querySelector('#Nin');
+        var p = document.querySelector('#Nout');
+
+        input.addEventListener('keyup', function(e){
+            p.textContent = '...';
+            someAsync(e.target.value).then(function(data){
+                p.textContent = data;
+            });
+        });
+    };
+
+    doObservable();
+    doNormal();
+</script>

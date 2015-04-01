@@ -1,0 +1,22 @@
+{
+  "name": "requirejs",
+  "version": "0.0.0",
+  "homepage": "https://github.com/formigone/rnd",
+  "authors": [
+    "Rodrigo Silveira <rsilveira@deseretdigital.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.16",
+    "react": "~0.12.2",
+    "requirejs-react-jsx": "~0.12.1"
+  }
+}

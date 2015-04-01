@@ -1,0 +1,12 @@
+java -jar /usr/local/google-closure/compiler.jar \
+    --js main.js \
+    --js src/** \
+    --js node_modules/closure-library/closure/goog/** \
+    --only_closure_dependencies  \
+    --closure_entry_point=rokko.main \
+    --warning_level=VERBOSE \
+    --compilation_level=WHITESPACE_ONLY \
+    --create_source_map=app.comp.js.map \
+    > app.comp.js
+
+echo "//# sourceMappingURL=app.comp.js.map" >> app.comp.js

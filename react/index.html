@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>React</title>
+    <style>
+        .helloComp {
+            margin: 10px;
+            padding: 20px;
+            background: #333;
+            border: 5px solid #ddd;
+            color: #fff;
+            font-family: monospace;
+            box-shadow: inset 0 2px 20px #000;
+        }
+
+        .helloComp p {
+            padding: 0;
+            margin: 0;
+            font-size: 1em;
+            line-height: 2em;
+        }
+    </style>
+    <script src="bower_components/react/react.js"></script>
+    <script src="bower_components/react/JSXTransformer.js"></script>
+</head>
+<body>
+
+<script>
+    var Person = function(name){
+        this.name = name;
+    };
+
+    var me = new Person('Rodrigo');
+</script>
+<script type="text/jsx">
+    var HelloMessage = React.createClass({
+        getInitialState: function(){
+            return { name: this.props.name };
+        },
+        render: function() {
+            return <div>Hello {this.state.name}</div>;
+        }
+    });
+
+    var HelloDesc = React.createClass({
+        render: function(){
+            return <p>#{this.props.desc}</p>
+        }
+    });
+
+    var HelloComp = React.createClass({
+        getInitialState: function(){
+            return { name: this.props.name };
+        },
+        render: function(){
+            return (
+                <div className="helloComp">
+                    <HelloMessage name={this.state.name} />
+                    <HelloDesc desc={this.props.desc} />
+                </div>
+            );
+        }
+    });
+
+    React.render(
+        <HelloComp name={me.name} desc="descriptionHere"/>, document.body
+    );
+</script>
+</body>
+</html>

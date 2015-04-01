@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <title>Typescript</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<script src="app.js"></script>
+<script>
+    var pt = new DDM.Point2D(0, 0);
+    var el = document.createElement('h1');
+    document.body.appendChild(el);
+    update(null);
+
+    /**
+     *
+     * @type {MouseEvent} ev
+     */
+    function update(ev){
+        if (ev){
+            pt.moveTo(ev.offsetX, ev.offsetY);
+        }
+
+        el.textContent = pt.toString();
+    }
+
+    document.body.addEventListener('mousemove', update);
+</script>
+</body>
+</html>
