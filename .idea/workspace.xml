@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28ac7b57-3d30-4e78-8b33-dce3735188dc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php-di/src/Model/ComplexModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php-di/src/Service/ComplexService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php-di/src/Db/Db.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php-di/src/Model/Model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/Person.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php-di/src/Service/Service.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mongo/src/User.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typescript/app.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mongo/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php-di/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/goog/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/goog/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/hello.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/goog/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/goog/dist/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/gen/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/rxjs/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requirejs/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typescript/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ddm-oauth/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mongo/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php-di/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php-underscore/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/goog/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requirejs/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requirejs/lib/comp/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/goog/src/rokko/person.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/goog/tmpl/card.soy" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.aggregates.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.aggregates.map" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.aggregates.min.js" />
@@ -84,10 +57,11 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.virtualtime.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.virtualtime.map" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.virtualtime.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/polymer/tutorial-01.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/goog/app.comp.js.map" afterPath="$PROJECT_DIR$/goog/app.comp.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/goog/dist/build.js" afterPath="$PROJECT_DIR$/goog/dist/build.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/goog/gulpfile.js" afterPath="$PROJECT_DIR$/goog/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/goog/dist/index.html" afterPath="$PROJECT_DIR$/goog/dist/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/goog/main.js" afterPath="$PROJECT_DIR$/goog/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rnd.iws" />
@@ -135,13 +109,16 @@
         <option value="$PROJECT_DIR$/typescript/index.html" />
         <option value="$PROJECT_DIR$/goog/config.js" />
         <option value="$PROJECT_DIR$/goog/config.json" />
-        <option value="$PROJECT_DIR$/goog/main.js" />
         <option value="$PROJECT_DIR$/goog/index.html" />
         <option value="$PROJECT_DIR$/goog/make" />
-        <option value="$PROJECT_DIR$/goog/dist/index.html" />
         <option value="$PROJECT_DIR$/goog/src/rokko/person.js" />
         <option value="$PROJECT_DIR$/goog/dist/build.js" />
+        <option value="$PROJECT_DIR$/goog/tmpl/test.html" />
+        <option value="$PROJECT_DIR$/goog/tmpl/card.soy" />
+        <option value="$PROJECT_DIR$/goog/main.js" />
         <option value="$PROJECT_DIR$/goog/gulpfile.js" />
+        <option value="$PROJECT_DIR$/goog/src/rokko/cute/card.js" />
+        <option value="$PROJECT_DIR$/goog/dist/index.html" />
       </list>
     </option>
   </component>
@@ -290,6 +267,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tmpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rnd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rnd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -302,11 +297,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="last_opened_file_path" value="/usr/local/google-closure/gjslint.config" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -317,6 +313,7 @@
       <recent name="$PROJECT_DIR$/php-di/src/Service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/goog/src/rokko" />
       <recent name="$PROJECT_DIR$/goog/dist" />
       <recent name="$PROJECT_DIR$/react" />
     </key>
@@ -388,18 +385,18 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.165" sideWeight="0.49535194" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -423,11 +420,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/goog/tmpl/card.soy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/goog/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="810">
           <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -435,7 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -513,27 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="8" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ddm-oauth/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="14" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ddm-oauth/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="14" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ddm-oauth/vendor/deseretdigital/ddm-auth-sdk/lib/DDM/Auth/Auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02209131" vertical-offset="0" max-vertical-offset="0">
-          <caret line="77" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -635,10 +617,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goog/main.js">
+    <entry file="file://$PROJECT_DIR$/goog/src/rokko/person.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32320443" vertical-offset="0" max-vertical-offset="724">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.12430939" vertical-offset="0" max-vertical-offset="724">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goog/dist/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="711">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goog/make">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19889502" vertical-offset="0" max-vertical-offset="724">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -651,42 +647,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goog/src/rokko/person.js">
+    <entry file="file://$PROJECT_DIR$/goog/node_modules/closure-library/closure/goog/soy/soy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2988">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goog/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27348065" vertical-offset="0" max-vertical-offset="724">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goog/src/rokko/cute/card.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27348065" vertical-offset="0" max-vertical-offset="724">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goog/tmpl/card.soy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12430939" vertical-offset="0" max-vertical-offset="724">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goog/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15494978" vertical-offset="0" max-vertical-offset="697">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goog/dist/build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="711">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goog/make">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19889502" vertical-offset="0" max-vertical-offset="724">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="39" />
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/goog/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45303866" vertical-offset="68" max-vertical-offset="810">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="38" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.5718232" vertical-offset="0" max-vertical-offset="810">
+          <caret line="23" column="113" selection-start-line="23" selection-start-column="113" selection-end-line="23" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goog/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33572453" vertical-offset="0" max-vertical-offset="697">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
           <folding />
         </state>
       </provider>

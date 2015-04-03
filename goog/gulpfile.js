@@ -9,7 +9,7 @@ var paths = {
     ]
 };
 
-gulp.task('default', function () {
+gulp.task('deps', function () {
     gulp.src(paths.scripts)
         .pipe(closureDeps({
             fileName: 'deps.js',
@@ -21,7 +21,7 @@ gulp.task('default', function () {
 
 
 gulp.task('build', function () {
-    gulp.src(['main.js', 'src/**/*.js', 'node_modules/closure-library/closure/goog/**/*.js'])
+    gulp.src(['main.js', 'src/**/*.js', 'node_modules/closure-library/closure/goog/**/*.js', 'soyutils_usegoog.js'])
         .pipe(closureCompiler({
             compilerPath: '/usr/local/google-closure/compiler.jar',
             fileName: 'dist/build.js',
