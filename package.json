@@ -1,0 +1,24 @@
+{
+  "name": "rnd",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/formigone/rnd.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/formigone/rnd/issues"
+  },
+  "devDependencies": {
+    "karma": "~0.12.31"
+  }
+}
