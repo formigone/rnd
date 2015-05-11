@@ -5,6 +5,7 @@ node_js:
 script: node_modules/karma/bin/karma start js-tdd/tests/karma.conf.js --single-run
 
 before_install:
+  - npm install -g npm@latest
   - npm install
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
