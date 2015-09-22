@@ -16,41 +16,96 @@
 <body>
 <script src="three.js"></script>
 <script>
-    var scene = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    var renderer = new THREE.WebGLRenderer();
+    function demo01() {
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        var renderer = new THREE.WebGLRenderer();
 
-    renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        var light = new THREE.DirectionalLight(0xffffff);
+        light.position.set(0, 1, 5).normalize();
+        scene.add(light);
+
+        var texture1 = '/assets/minecraft-v2/grass_side_snowed.png';
+        var texture2 = '/assets/minecraft-v2/grass_top.png';
+        var geometry = new THREE.BoxGeometry(1, 1, 1);
+        var material1 = new THREE.MeshPhongMaterial({map: THREE.ImageUtils.loadTexture(texture1)});
+        var material2 = new THREE.MeshPhongMaterial({map: THREE.ImageUtils.loadTexture(texture2)});
+        var materials = [material1, material1, material2, material1, material1, material1];
+        var meshFaceMaterial = new THREE.MeshFaceMaterial(materials);
+
+        var cubes = [];
+        for (var z = 0; z < 20; z++) {
+            for (var x = 0; x < 20; x++) {
+                var cube = new THREE.Mesh(geometry, meshFaceMaterial);
+                cube.position.y = x * 2;
+                cube.position.z = z * 1;
+                cubes.push(cube);
+                scene.add(cube);
+            }
+        }
+        camera.position.x = 10;
+        camera.position.z = 30;
+
+        function tick(time) {
+            requestAnimationFrame(tick);
+            update();
+            render();
+        }
+
+        function render() {
+            renderer.render(scene, camera);
+        }
+
+        function update() {
+            cubes.forEach(function (cube) {
+                cube.rotation.x = 0.5;
+                cube.rotation.y += 0.001;
+            });
+        }
+
+        tick(0);
+    }
+
+
+
+    var WIDTH = window.innerWidth;
+    var HEIGHT = window.innerHeight;
+
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.1, 10000);
+    var renderer = new THREE.WebGLRenderer();
+    var light = new THREE.AmbientLight(0xffffff);
+    var light2 = new THREE.PointLight(0x000000);
+
+    light2.position.y = 10;
+
+    renderer.setSize(WIDTH, HEIGHT);
+    scene.add(camera);
+    scene.add(light);
+    scene.add(light2);
     document.body.appendChild(renderer.domElement);
 
-    var light = new THREE.DirectionalLight(0xffffff);
-    light.position.set(0, 1, 5).normalize();
-    scene.add(light);
+    var gFloor = new THREE.CubeGeometry(1000, 1, 1000);
+    var mFloor = new THREE.MeshLambertMaterial({
+        color: 0xcc0000
+    });
+    var gCube = new THREE.CubeGeometry(10, 10, 10);
+    var floor = new THREE.Mesh(gFloor, mFloor);
 
-    var texture1 = '/assets/minecraft-v2/grass_side_snowed.png';
-    var texture2 = '/assets/minecraft-v2/grass_top.png';
-    var geometry = new THREE.BoxGeometry(1, 1, 1);
-    var material1 = new THREE.MeshPhongMaterial({map: THREE.ImageUtils.loadTexture(texture1)});
-    var material2 = new THREE.MeshPhongMaterial({map: THREE.ImageUtils.loadTexture(texture2)});
-    var materials = [material1, material1, material2, material1, material1, material1];
-    var meshFaceMaterial = new THREE.MeshFaceMaterial(materials);
+    for (var i = 0; i < 100; i++) {
+        var cube = new THREE.Mesh(gCube, new THREE.MeshLambertMaterial({color: Math.random() * 0xffffff}));
+        cube.position.x = Math.random() * 800 - 400;
+        cube.position.z = Math.random() * 800 - 400;
+        cube.position.y = 5;
+        floor.add(cube);
+    }
 
-    var cubes = [];
-    for (var i = 0; i < 20; i++) {
-        var cube = new THREE.Mesh(geometry, meshFaceMaterial);
-        cube.position.x = i * 1 - 10;
-        cubes.push(cube);
-        scene.add(cube);
-    }
-    for (var i = 0; i < 20; i++) {
-        var cube = new THREE.Mesh(geometry, meshFaceMaterial);
-        cube.position.x = i * 1 - 10;
-        cube.position.y = -1.25;
-        cube.position.z = 1;
-        cubes.push(cube);
-        scene.add(cube);
-    }
-    camera.position.z = 5;
+    scene.add(floor);
+
+
 
     function tick(time) {
         requestAnimationFrame(tick);
@@ -63,10 +118,9 @@
     }
 
     function update() {
-        cubes.forEach(function(cube){
-            cube.rotation.x = 0.5;
-            cube.rotation.y += 0.01;
-        });
+        camera.rotateY(0.01);
+        camera.position.y += 0.1;
+        camera.position.z += 0.01;
     }
 
     tick(0);
