@@ -1,9 +1,20 @@
 const React = require('react');
 
 const Card = React.createClass({
-    render: function(){
+    getDefaultProps: function(){
+        return {
+            name: null,
+            img: null
+        };
+    },
+    render: function () {
         return (
-            <h1>CARD</h1>
+            <div className="card">
+                <img src={this.props.img} className="img-responsive"/>
+
+                <h2>{this.props.name}</h2>
+                <button className="btn btn-primary">Follow</button>
+            </div>
         );
     }
 });

@@ -1,8 +1,5 @@
 const React = require('react');
 
-const Card = require('./components/card');
+const App = require('./components/app');
 
-React.render(
-    <Card />,
-    document.getElementById('content')
-);
+React.render(<App/>,document.getElementById('app'));
