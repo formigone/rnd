@@ -11,7 +11,7 @@ const FollowingDeck = React.createClass({
             .filter(user => user.following)
             .map(user => <a href="#" className="list-group-item">@{user.username}</a>)
         return (
-            <div className="list-group">
+            <div className="list-group stickySidebar">
                 <a href="#" className="list-group-item active">Following <span className="badge">{followees.length}</span></a>
                 {followees}
             </div>

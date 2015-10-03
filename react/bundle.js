@@ -162,7 +162,7 @@
 	        });
 	        return React.createElement(
 	            "div",
-	            { className: "list-group" },
+	            { className: "list-group stickySidebar" },
 	            React.createElement(
 	                "a",
 	                { href: "#", className: "list-group-item active" },
