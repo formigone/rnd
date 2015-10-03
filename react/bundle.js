@@ -144,7 +144,22 @@
 	var FollowingDeck = React.createClass({
 	    displayName: "FollowingDeck",
 
+	    getDefaultProps: function getDefaultProps() {
+	        return {
+	            users: []
+	        };
+	    },
 	    render: function render() {
+	        var followees = this.props.users.filter(function (user) {
+	            return user.following;
+	        }).map(function (user) {
+	            return React.createElement(
+	                "a",
+	                { href: "#", className: "list-group-item" },
+	                "@",
+	                user.username
+	            );
+	        });
 	        return React.createElement(
 	            "div",
 	            { className: "list-group" },
@@ -155,14 +170,10 @@
 	                React.createElement(
 	                    "span",
 	                    { className: "badge" },
-	                    "23"
+	                    followees.length
 	                )
 	            ),
-	            React.createElement(
-	                "a",
-	                { href: "#", className: "list-group-item" },
-	                "Name"
-	            )
+	            followees
 	        );
 	    }
 	});
@@ -199,7 +210,11 @@
 	        UserStore.removeListener(UserConstants.DID_FETCH, this.onUserDidFetch);
 	    },
 	    onUserDidFetch: function onUserDidFetch() {
-	        this.setState({ users: UserStore.getUsers() });
+	        var users = UserStore.getUsers().map(function (user) {
+	            user.following = Math.random() > 0.8;
+	            return user;
+	        });
+	        this.setState({ users: users });
 	    },
 	    render: function render() {
 	        return React.createElement(
@@ -217,7 +232,7 @@
 	                React.createElement(
 	                    'div',
 	                    { className: 'col-xs-6 col-sm-3 sidebar-offcanvas' },
-	                    React.createElement(FollowingDeck, null)
+	                    React.createElement(FollowingDeck, { users: this.state.users })
 	                )
 	            ),
 	            React.createElement('hr', null),

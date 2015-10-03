@@ -20,7 +20,11 @@ const App = React.createClass({
         UserStore.removeListener(UserConstants.DID_FETCH, this.onUserDidFetch);
     },
     onUserDidFetch: function(){
-        this.setState({users: UserStore.getUsers()});
+        const users = UserStore.getUsers().map(user => {
+            user.following = Math.random() > 0.8;
+            return user;
+        });
+        this.setState({users: users});
     },
     render: function () {
         return (
@@ -32,7 +36,7 @@ const App = React.createClass({
                     </div>
 
                     <div className="col-xs-6 col-sm-3 sidebar-offcanvas">
-                        <FollowingDeck />
+                        <FollowingDeck users={this.state.users} />
                     </div>
                 </div>
 
