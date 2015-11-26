@@ -1,53 +1,52 @@
-const app = {
-    getDefState(){
-        return {
-            counter: 0
-        };
-    },
-    inc: document.createElement('button'),
-    dec: document.createElement('button'),
-    display: document.createElement('p'),
-    init(container){
-        this.inc.textContent = '+';
-        this.dec.textContent = '-';
-        this.display.textContent = '';
+const Redux = require('redux');
 
-        container.appendChild(this.display);
-        container.appendChild(this.dec);
-        container.appendChild(this.inc);
-
-        this.inc.addEventListener('click', this.handleClick.bind(this, this.constants.inc));
-        this.dec.addEventListener('click', this.handleClick.bind(this, this.constants.dec));
-
-        this.data = this.getDefState();
-    },
-    constants: {
-        inc: 0,
-        dec: 1
-    },
-    handleClick(action){
-        this.data = this.reducer(this.data, action);
-        this.render();
-    },
-    reducer(state, action){
-        const data = typeof state === 'undefined' ? this.getDefState() : state;
-        switch(action){
-            case this.constants.inc:
-                this.data.counter += 1;
-                break;
-            case this.constants.dec:
-                this.data.counter -= 1;
-                break;
-        }
-
-        return data;
-    },
-    render(){
-        this.display.textContent = this.data.counter;
-    }
+const data = {
+    counter: 0
 };
+const inc = document.createElement('button');
+const dec = document.createElement('button');
+const display = document.createElement('p');
+
+const store = Redux.createStore(reducer);
+store.subscribe(render);
+
+function reducer(state, action) {
+    if (typeof state === 'undefined') {
+        return data;
+    }
+
+    switch(action.type){
+        case 'inc':
+            state.counter += 1;
+            break;
+        case 'dec':
+            state.counter -= 1;
+            break;
+    }
+
+    return state;
+}
+
+function render(state) {
+    if (typeof state === 'undefined') {
+        state = store.getState();
+    }
+
+    display.textContent = state.counter;
+}
 
 setTimeout(_ => {
-    app.init(document.body);
-    app.render();
+    const container = document.body;
+
+    inc.textContent = '+';
+    dec.textContent = '-';
+    display.textContent = '';
+
+    container.appendChild(display);
+    container.appendChild(dec);
+    container.appendChild(inc);
+
+    inc.addEventListener('click', _ => { store.dispatch({type: 'inc'}) });
+    dec.addEventListener('click', _ => { store.dispatch({type: 'dec'}) });
+    render(data);
 }, 0);
