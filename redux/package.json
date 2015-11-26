@@ -1,0 +1,15 @@
+{
+  "name": "redux",
+  "version": "1.0.0",
+  "scripts": {
+    "server": "http-server",
+    "watch": "./node_modules/webpack/bin/webpack.js --watch --colors --verbose --progress"
+  },
+  "dependencies": {
+    "babel-runtime": "~6.0",
+    "babel-core": "~5",
+    "babel-loader": "~5",
+    "redux": "~3.0",
+    "webpack": "~1.10"
+  }
+}
