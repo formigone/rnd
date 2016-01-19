@@ -46,65 +46,122 @@
 
 	'use strict';
 
-	var Redux = __webpack_require__(1);
+	var React = __webpack_require__(1);
 
-	var data = {
-	    counter: 0
-	};
-	var inc = document.createElement('button');
-	var dec = document.createElement('button');
-	var display = document.createElement('p');
+	var MyApp = __webpack_require__(2);
 
-	var store = Redux.createStore(reducer);
-	store.subscribe(render);
-
-	function reducer(state, action) {
-	    if (typeof state === 'undefined') {
-	        return data;
-	    }
-
-	    switch (action.type) {
-	        case 'inc':
-	            state.counter += 1;
-	            break;
-	        case 'dec':
-	            state.counter -= 1;
-	            break;
-	    }
-
-	    return state;
-	}
-
-	function render(state) {
-	    if (typeof state === 'undefined') {
-	        state = store.getState();
-	    }
-
-	    display.textContent = state.counter;
-	}
-
-	setTimeout(function (_) {
-	    var container = document.body;
-
-	    inc.textContent = '+';
-	    dec.textContent = '-';
-	    display.textContent = '';
-
-	    container.appendChild(display);
-	    container.appendChild(dec);
-	    container.appendChild(inc);
-
-	    inc.addEventListener('click', function (_) {
-	        store.dispatch({ type: 'inc' });
-	    });
-	    dec.addEventListener('click', function (_) {
-	        store.dispatch({ type: 'dec' });
-	    });
-	    render(data);
-	}, 0);
+	React.render(React.createElement(MyApp, null), document.getElementById('app'));
 
 /***/ },
 /* 1 */
+/***/ function(module, exports) {
+
+	module.exports = React;
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var Display = __webpack_require__(19);
+	var Summary = __webpack_require__(20);
+	var Button = __webpack_require__(3);
+
+	var actions = __webpack_require__(17);
+	var appState = __webpack_require__(18);
+
+	var store = __webpack_require__(4);
+
+	var MyApp = React.createClass({
+	    displayName: 'MyApp',
+
+	    getInitialState: function getInitialState() {
+	        return appState;
+	    },
+	    componentWillMount: function componentWillMount() {
+	        var _this = this;
+
+	        store.subscribe(function (_) {
+	            console.log('############', store.getState());
+	            _this.setState(store.getState());
+	        });
+	    },
+	    render: function render() {
+	        var state = this.state;
+	        console.log('# # # # # #', state);
+	        return React.createElement(
+	            'div',
+	            null,
+	            React.createElement(Display, { counter: state.counter, mood: state.mood }),
+	            React.createElement(
+	                Button,
+	                { onClick: actions.DEC },
+	                '-'
+	            ),
+	            React.createElement(
+	                Button,
+	                { onClick: actions.INC },
+	                '+'
+	            ),
+	            React.createElement(Summary, { total: state.total })
+	        );
+	    }
+	});
+
+	module.exports = MyApp;
+
+/***/ },
+/* 3 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var store = __webpack_require__(4);
+
+	var Button = React.createClass({
+	    displayName: 'Button',
+
+	    getDefaultProps: function getDefaultProps() {
+	        return {
+	            onClick: null
+	        };
+	    },
+	    onClick: function onClick() {
+	        if (this.props.onClick) {
+	            store.dispatch({ type: this.props.onClick });
+	        }
+	    },
+	    render: function render() {
+	        return React.createElement(
+	            'button',
+	            { onClick: this.onClick },
+	            this.props.children
+	        );
+	    }
+	});
+
+	module.exports = Button;
+
+/***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var Redux = __webpack_require__(5);
+	var reducer = __webpack_require__(15);
+
+	var store = Redux.createStore(reducer);
+
+	module.exports = store;
+
+/***/ },
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -113,23 +170,23 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _createStore = __webpack_require__(2);
+	var _createStore = __webpack_require__(6);
 
 	var _createStore2 = _interopRequireDefault(_createStore);
 
-	var _utilsCombineReducers = __webpack_require__(4);
+	var _utilsCombineReducers = __webpack_require__(8);
 
 	var _utilsCombineReducers2 = _interopRequireDefault(_utilsCombineReducers);
 
-	var _utilsBindActionCreators = __webpack_require__(8);
+	var _utilsBindActionCreators = __webpack_require__(12);
 
 	var _utilsBindActionCreators2 = _interopRequireDefault(_utilsBindActionCreators);
 
-	var _utilsApplyMiddleware = __webpack_require__(9);
+	var _utilsApplyMiddleware = __webpack_require__(13);
 
 	var _utilsApplyMiddleware2 = _interopRequireDefault(_utilsApplyMiddleware);
 
-	var _utilsCompose = __webpack_require__(10);
+	var _utilsCompose = __webpack_require__(14);
 
 	var _utilsCompose2 = _interopRequireDefault(_utilsCompose);
 
@@ -140,7 +197,7 @@
 	exports.compose = _utilsCompose2['default'];
 
 /***/ },
-/* 2 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -150,7 +207,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _utilsIsPlainObject = __webpack_require__(3);
+	var _utilsIsPlainObject = __webpack_require__(7);
 
 	var _utilsIsPlainObject2 = _interopRequireDefault(_utilsIsPlainObject);
 
@@ -308,7 +365,7 @@
 	}
 
 /***/ },
-/* 3 */
+/* 7 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -343,7 +400,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 4 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -353,17 +410,17 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _createStore = __webpack_require__(2);
+	var _createStore = __webpack_require__(6);
 
-	var _utilsIsPlainObject = __webpack_require__(3);
+	var _utilsIsPlainObject = __webpack_require__(7);
 
 	var _utilsIsPlainObject2 = _interopRequireDefault(_utilsIsPlainObject);
 
-	var _utilsMapValues = __webpack_require__(6);
+	var _utilsMapValues = __webpack_require__(10);
 
 	var _utilsMapValues2 = _interopRequireDefault(_utilsMapValues);
 
-	var _utilsPick = __webpack_require__(7);
+	var _utilsPick = __webpack_require__(11);
 
 	var _utilsPick2 = _interopRequireDefault(_utilsPick);
 
@@ -477,10 +534,10 @@
 	}
 
 	module.exports = exports['default'];
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ },
-/* 5 */
+/* 9 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -577,7 +634,7 @@
 
 
 /***/ },
-/* 6 */
+/* 10 */
 /***/ function(module, exports) {
 
 	/**
@@ -602,7 +659,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 7 */
+/* 11 */
 /***/ function(module, exports) {
 
 	/**
@@ -629,7 +686,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 8 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -639,7 +696,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _utilsMapValues = __webpack_require__(6);
+	var _utilsMapValues = __webpack_require__(10);
 
 	var _utilsMapValues2 = _interopRequireDefault(_utilsMapValues);
 
@@ -689,7 +746,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 9 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -702,7 +759,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _compose = __webpack_require__(10);
+	var _compose = __webpack_require__(14);
 
 	var _compose2 = _interopRequireDefault(_compose);
 
@@ -755,7 +812,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 10 */
+/* 14 */
 /***/ function(module, exports) {
 
 	/**
@@ -783,6 +840,146 @@
 	}
 
 	module.exports = exports["default"];
+
+/***/ },
+/* 15 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var combineReducers = __webpack_require__(5).combineReducers;
+
+	var rootReducer = __webpack_require__(16);
+
+	var reducer = combineReducers({
+	    rootReducer: rootReducer
+	});
+
+	module.exports = rootReducer;
+
+/***/ },
+/* 16 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var actions = __webpack_require__(17);
+	var appState = __webpack_require__(18);
+
+	function rootReducer(state, action) {
+	    console.log('state', state, action);
+	    console.log('>> ', state);
+	    switch (action.type) {
+	        case actions.INC:
+	            state.counter += state.incMultiplier;
+	            state.total += 1;
+	            break;
+	        case actions.DEC:
+	            state.counter += state.decMultiplier;
+	            state.total += 1;
+	            break;
+	        default:
+	            return appState;
+	    }
+
+	    if (state.counter < 0) {
+	        state.mood = 'red';
+	    } else if (state.counter > 5) {
+	        state.mood = 'green';
+	    } else {
+	        state.mood = 'black';
+	    }
+	    console.log('<< ', state);
+	    return state;
+	}
+
+	module.exports = rootReducer;
+
+/***/ },
+/* 17 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	var actions = {
+	    SET_STATE: 'app/SET_STATE',
+	    INC: 'app/btn/INC',
+	    DEC: 'app/btn/DEC'
+	};
+
+	module.exports = actions;
+
+/***/ },
+/* 18 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	var appData = {
+	    counter: 0,
+	    total: 0,
+	    mood: 'black',
+	    incMultiplier: 1,
+	    decMultiplier: -1
+	};
+
+	module.exports = appData;
+
+/***/ },
+/* 19 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var Display = React.createClass({
+	    displayName: 'Display',
+
+	    getDefaultProps: function getDefaultProps() {
+	        return {
+	            counter: 0,
+	            mood: 'black'
+	        };
+	    },
+	    render: function render() {
+	        return React.createElement(
+	            'h1',
+	            { style: { color: this.props.mood } },
+	            this.props.counter
+	        );
+	    }
+	});
+
+	module.exports = Display;
+
+/***/ },
+/* 20 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var Summary = React.createClass({
+	    displayName: 'Summary',
+
+	    getDefaultProps: function getDefaultProps() {
+	        return {
+	            total: 0
+	        };
+	    },
+	    render: function render() {
+	        return React.createElement(
+	            'p',
+	            null,
+	            'Total actions: ',
+	            this.props.total
+	        );
+	    }
+	});
+
+	module.exports = Summary;
 
 /***/ }
 /******/ ]);

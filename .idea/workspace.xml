@@ -2,60 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28ac7b57-3d30-4e78-8b33-dce3735188dc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.time.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redux/components/MyApp.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redux/actions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redux/reducers/appData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redux/components/button.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redux/components/display.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redux/reducers/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redux/main.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redux/reducers/root.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.aggregates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.aggregates.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.aggregates.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.all.compat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.all.compat.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.all.compat.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.all.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.async.compat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.async.compat.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.async.compat.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.async.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.async.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.async.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.backpressure.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.backpressure.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.backpressure.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.binding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.binding.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.binding.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.coincidence.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.coincidence.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.compat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.async.compat.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.joinpatterns.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.all.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.async.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.compat.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.backpressure.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.compat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.experimental.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.testing.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.binding.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.all.compat.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.testing.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.all.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.backpressure.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.virtualtime.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.extras.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.aggregates.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.all.compat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.async.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.async.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.binding.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.joinpatterns.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.async.compat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.binding.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.experimental.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.compat.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.extras.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.extras.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.compat.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.aggregates.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.virtualtime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.joinpatterns.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.time.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.async.compat.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.experimental.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.map" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.coincidence.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.compat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.compat.map" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.compat.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.time.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.virtualtime.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.aggregates.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.all.compat.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.experimental.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.experimental.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.experimental.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.joinpatterns.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.joinpatterns.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.joinpatterns.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.compat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.compat.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.compat.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.extras.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.extras.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.extras.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.lite.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.testing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.backpressure.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.testing.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.testing.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.time.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.time.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.time.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.virtualtime.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.virtualtime.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RxJS/rx.virtualtime.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redux/store.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redux/components/summary.jsx" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/redux/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/redux/npm-debug.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redux/bundle.js" afterPath="$PROJECT_DIR$/redux/bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redux/index.html" afterPath="$PROJECT_DIR$/redux/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redux/package.json" afterPath="$PROJECT_DIR$/redux/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redux/webpack.config.js" afterPath="$PROJECT_DIR$/redux/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rnd.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,11 +94,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/redux/main.js">
+      <file leaf-file-name="MyApp.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redux/components/MyApp.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6419753">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="store.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redux/store.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/redux/reducers/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.09876543">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="root.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redux/reducers/root.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -139,10 +186,20 @@
         <option value="$PROJECT_DIR$/react/social.html" />
         <option value="$PROJECT_DIR$/react/js/components/app.jsx" />
         <option value="$PROJECT_DIR$/react/js/components/following-deck.jsx" />
-        <option value="$PROJECT_DIR$/redux/webpack.config.js" />
-        <option value="$PROJECT_DIR$/redux/package.json" />
-        <option value="$PROJECT_DIR$/redux/index.html" />
         <option value="$PROJECT_DIR$/redux/main.js" />
+        <option value="$PROJECT_DIR$/redux/package.json" />
+        <option value="$PROJECT_DIR$/redux/webpack.config.js" />
+        <option value="$PROJECT_DIR$/redux/main.jsx" />
+        <option value="$PROJECT_DIR$/redux/index.html" />
+        <option value="$PROJECT_DIR$/redux/components/summary.jsx" />
+        <option value="$PROJECT_DIR$/redux/components/display.jsx" />
+        <option value="$PROJECT_DIR$/redux/reducers/appData.js" />
+        <option value="$PROJECT_DIR$/redux/components/button.jsx" />
+        <option value="$PROJECT_DIR$/redux/actions.js" />
+        <option value="$PROJECT_DIR$/redux/store.js" />
+        <option value="$PROJECT_DIR$/redux/reducers/root.js" />
+        <option value="$PROJECT_DIR$/redux/components/MyApp.jsx" />
+        <option value="$PROJECT_DIR$/redux/reducers/main.js" />
       </list>
     </option>
   </component>
@@ -158,8 +215,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="23" />
-    <option name="width" value="1600" />
+    <option name="width" value="1602" />
     <option name="height" value="857" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -219,6 +277,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -299,9 +360,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches">
-        <subPane />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,11 +375,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/redux/components" />
       <recent name="$PROJECT_DIR$/react/js/components" />
       <recent name="$PROJECT_DIR$/flight/src" />
       <recent name="$PROJECT_DIR$/goog/dist" />
       <recent name="$PROJECT_DIR$/goog" />
-      <recent name="$PROJECT_DIR$/requirejs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lh9" />
@@ -382,14 +440,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1600" height="857" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1" y="23" width="1602" height="857" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18898623" sideWeight="0.5791557" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18875" sideWeight="0.5949868" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18898623" sideWeight="0.42084432" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18875" sideWeight="0.4050132" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -422,69 +480,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/requirejs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goog/build/deps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goog/src/rokko/person.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goog/dist/build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goog/make">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goog/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goog/node_modules/closure-library/closure/goog/soy/soy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goog/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goog/src/rokko/cute/card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/goog/tmpl/card.soy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -734,39 +729,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redux/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49382716">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redux/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12820514">
-          <caret line="5" column="89" selection-start-line="5" selection-start-column="89" selection-end-line="5" selection-end-column="89" />
+        <state vertical-scroll-proportion="0.35897437">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redux/node_modules/redux/lib/index.js">
+    <entry file="file://$PROJECT_DIR$/redux/node_modules/react/react.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/redux/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49382716">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/redux/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12820514">
-          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redux/components/summary.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12345679">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redux/components/display.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14814815">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redux/reducers/appData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22222222">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redux/components/button.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2962963">
+          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redux/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.024691358">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redux/main.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.049382716">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redux/main.js">
+    <entry file="file://$PROJECT_DIR$/redux/store.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6419753">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redux/components/MyApp.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redux/reducers/root.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redux/reducers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09876543">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>

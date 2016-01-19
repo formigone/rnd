@@ -1,14 +1,13 @@
 module.exports = {
-    entry: './main.js',
+    entry: './main.jsx',
     output: {
-        path: './',
         filename: 'bundle.js'
     },
     module: {
         loaders: [
             {
-                test: /\.js$/,
-                exclude: /(node_modules|bower_components)/,
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
                 loader: 'babel',
                 query: {
                     cacheDirectory: true,
@@ -18,7 +17,10 @@ module.exports = {
             }
         ]
     },
+    externals: {
+        react: 'React'
+    },
     resolve: {
-        extensions: ['', '.js']
+        extensions: ['', '.js', '.jsx']
     }
 };
