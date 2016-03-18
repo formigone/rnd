@@ -1,0 +1,12 @@
+{
+    "name": "root/logging",
+    "authors": [
+        {
+            "name": "Rodrigo Silveira",
+            "email": "rsilveira@deseretdigital.com"
+        }
+    ],
+    "require": {
+       "monolog/monolog": "1.18.1"
+    }
+}
